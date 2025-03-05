@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,intial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet">
+	<title>ProjectQ3</title>
+	<style type="text/css">		
+
+		.title{
+			margin-top: 50px;
+		}
+
+		.fare{
+			margin-right: 250px;
+			margin-left: 250px;
+		}
+
+		body{
+			background-image:url(https://i.pinimg.com/736x/68/2f/cd/682fcd14447dac0b31f8aeab74ac8a6f.jpg);
+			background-color: #D4F6FF;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+		}
+
+	</style>
+</head>
+<body>
+<nav class="navbar-expand-md bg-black navbar-black fixed-top">
+	<!-- Brand/Logo -->
+<div class="container-fluid">
+	<a class="navbar-brand" href="index.html"></a>
+</div>
+	<!-- Add Links -->
+<div class="collapse navbar-collapse">
+	<ul class="navbar-nav me-auto">
+		<li class="nav-item">
+			<a class="nav-link" href="FV_ICT9Emerald_Q3Project_Buo_Miguel.html" style="color: #FBFBFB;">|Home|-</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="trainschedule.html" style="color: #FBFBFB;">|Train Schedule|-</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="contactinfo.html" style="color: #FBFBFB;">|Contact Info|</a>
+		</li>
+	</ul>
+	<!-- Add a search bar -->
+    <form class="d-flex">
+    	    <input class="form-control" text="text" placeholder="search...">
+    	    <button class="btn btn-primary" type="button">Search</button>
+    </form>
+</div>
+</div>
+</nav>
+<div class="title">
+    <center><h1 style="font-family: serif; color: #FBFBFB;">૮ • ﻌ - ა⁩ Fare Guide</h1></center>
+</div>
+<br>
+<center>
+	<img src="file:///Users/manuelitobuo/Desktop/ICT/Quarter%202/Screen%20Shot%202025-03-05%20at%206.11.04%20PM.png">
+	<img src="file:///Users/manuelitobuo/Downloads/af87c59624c32963a962b281b90760b6-removebg-preview.png">
+</center>
+    <div class="fare">
+    	<br><br>
+    	<center><h3 style="font-family: serif; color: #FBFBFB;">LEAVING FROM:</h3>
+    <form>
+	<label></label><br><br>
+	<select class="form-select" id="fin">
+		<option value="14">North Avenue</option>
+		<option value="13">Quezon Avenue</option>
+		<option value="12">Kamuning</option>
+		<option value="11">Arenta Center-Cubao </option>
+		<option value="10">Santolan-Annapolis</option>
+		<option value="9">Ortigas</option>
+		<option value="8">Shaw Boulevard</option>
+		<option value="7">Boni</option>
+		<option value="6">Guadalupe</option>
+		<option value="5">Buendia</option>
+		<option value="4">Ayala</option>
+		<option value="3">Magallanes</option>
+		<option value="2">Taft Avenue</option>
+	</select></center>
+<br>
+<center><h3 style="font-family: serif; color: #FBFBFB;">GOING TO:</h3>
+	<label></label><br><br>
+	<select class="form-select" id="dorsal">
+		<option value="2">North Avenue</option>
+		<option value="3">Quezon Avenue</option>
+		<option value="4">Kamuning</option>
+		<option value="5">Arenta Center-Cubao </option>
+		<option value="6">Santolan-Annapolis</option>
+		<option value="7">Ortigas</option>
+		<option value="8">Shaw Boulevard</option>
+		<option value="9">Boni</option>
+		<option value="10">Guadalupe</option>
+		<option value="11">Buendia</option>
+		<option value="12">Ayala</option>
+		<option value="13">Magallanes</option>
+		<option value="14">Taft Avenue</option>
+	</select>
+
+	<button type="Submit" class="btn btn-danger" onclick="showValue()">Show Price</button>
+</form>
+
+<script>
+	function showValue(){
+		var purple = document.getElementById("fin").value;
+		var gold = document.getElementById("dorsal").value;
+	    var ans = purple * gold
+
+		window.alert("The ticket is" + ans);
+	}
+
+	<details ontoggle="message()">
+        <summary>Print Ticket</summary>
+        <i id="show"></i>
+</script>
+
+<form>
+	
+    <img src="file:///Users/manuelitobuo/Downloads/images-removebg-preview.png">
+
+	<button type="Submit" class="btn btn-danger" onclick="showPrint()">Print Ticket</button>
+</form>
+
+<script>
+	function showPrint(){
+		
+		window.alert("The ticket has been printed");
+
+	}
+</script></center>
+</div>
+</body>
+</html>
